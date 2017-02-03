@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'users/index'
+
+  get 'users/world'
+
+  get 'users/ninja'
+
+  get 'index/world'
+
+  get 'index/ninja'
+
+  get 'users/hello' =>'users#world'
+
+  get 'users/ninjas'=>'users#ninja'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
